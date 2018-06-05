@@ -1,0 +1,16 @@
+Note:
+Please refresh after using another virtual device in order to revert all effect to its original device settings
+
+
+
+Learning References:
+
+
+
+
+
+Additional Information:
+https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf
+
+
+https://ingridnieto.com/2010/11/page/2/
