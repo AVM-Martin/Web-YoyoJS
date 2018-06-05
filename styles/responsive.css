@@ -1,16 +1,11 @@
 /* styles/responsive.css */
 
-br.responsive{
-    display: none;
-}
-
 /* for tablet */
 @media only screen and (min-width: 551px) and (max-width: 1150px){
-    br.responsive{
-        display: inline;
+    div.subMenu{
+        font-size: 12px;
     }
 }
-
 
 /* for mobile phone */
 @media only screen and (max-width: 550px){
@@ -34,9 +29,36 @@ br.responsive{
     div#navbarMenu > div.menuContent{
         display: inline-block;
         padding: 10px 0px 10px;
-        height: auto;
+        height: 20px;
         width: 100%;
         color: white;
+    }
+
+    div.menuContent > div.mainMenu{
+        display: inline-block;
+        padding: 0px 0px 10px;
+        height: 20px;
+        width: 100%;
+        color: white;
+        line-height: initial;
+    }
+
+    div.subMenu > a{
+        display: inline-block;
+        padding: 10px 0px 0px;
+        height: 30px;
+        width: 100%;
+        color: white;
+    }
+
+    div.menuContent > div.subMenu{
+        position: initial;
+        background-color: gray;
+        width: 100%;
+    }
+
+    div.menuContent:hover > .subMenu {
+        /*display: none;*/
     }
 
 }

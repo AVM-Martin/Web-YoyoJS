@@ -10,7 +10,19 @@ Learning References:
 
 
 Additional Information:
+
 https://hackernoon.com/the-ultimate-css-battle-grid-vs-flexbox-d40da0449faf
 
+https://css-tricks.com/centering-css-complete-guide/
+
+https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+
+http://ryanve.com/lab/dimensions/
+
+https://shop.yoyoexpert.com/collections/duncan/products/duncan-profly-yoyo?variant=18870865220
+
+http://www.yoyoplay.com/beginner-yoyos/
+
+https://www.yo-yo.com/beginner-yo-yo
 
 https://ingridnieto.com/2010/11/page/2/

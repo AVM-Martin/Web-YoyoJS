@@ -71,14 +71,51 @@ div#navbarMenu > div.menuContent{
     display: table-cell;
     margin: 0px;
     padding: 0px;
-    width: 16%;
+    width: 20%;
     height: 60px;
     background-color: inherit;
     text-align: center;
     vertical-align: middle;
+    position: relative;
 }
 
 div#navbarMenu > div.menuContent:hover{
     color: inherit;
     background-color: orange;
+}
+
+div.menuContent > div.mainMenu{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+div.menuContent > div.subMenu{
+    display: none;
+    position: absolute;
+    background-color: yellow;
+    width: 100%;
+}
+
+div.subMenu > a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0px;
+    color: black;
+    text-align: center;
+}
+
+div.subMenu > a:hover {
+    color: inherit;
+    background-color: orange;
+}
+
+div.menuContent:hover > .subMenu {
+    display: block;
 }

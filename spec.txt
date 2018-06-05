@@ -1,0 +1,110 @@
+spec
+BASIC
+
+3
+Diameter:	53.00 mm / 2.08 inches
+Width:	39.30 mm / 1.54 inches
+Gap Width:	Narrow Bearing: 2.75 mm / 0.00 inches 
+Unresponsive setup: 4.5 mm / 0.17 inches
+Weight:	58.5 grams
+Bearing Size:	Size C Narrow Bearing
+Response:	19mm Slim Pad Size
+Designed in:	USA
+Made in:	China
+
+4
+Diameter:	54.00 mm / 2.12 inches
+Width:	37.08 mm / 1.46 inches
+Gap Width:	3.16 mm / .12 inches
+Weight:	With caps 65.60 grams
+Without caps 61.00 grams
+Bearing Size:	Size C (.250 x .500 x .187)
+Response:	Duncan SG Stickers
+Also Compatible W/ CBC or K-Pad 
+(Slim Pad Size)
+
+5
+Ball bearing axle, for long spin times
+Modified shape means that it's great for looping and two handed yoyo tricks.
+Weight: 54 grams
+Width: 35.5mm
+Diameter: 58.7mm
+Starburst Response System
+----------------------------------------------------------------------------------------------------
+PRO
+
+1
+Weight: 66 grams
+Width: 40mm
+Diameter: 50mm
+Metal, Flared Gap Shape, for superior performance with string tricks
+Wide Rimmed, for longer spin times and high stability
+Patented technology typically only included on higher priced YoYoFactory models
+K Pad Silicone Response System, for smooth, non-responsive play
+6061 Grade Anodized Aluminum, for the highest level of performance
+
+2
+Weight: 67.1 grams
+Width: 44.7 mm
+Diameter: 56.6 mm
+Stock Response: One Drop Flow Groove
+Gap Width: 4.25 mm
+Bearing Size: Large (C) stainless steel (One Drop 10 Ball Bearing)
+Finish: Machined Delrin
+Axle System: Custom machined inserts and hubs
+
+3
+55.83 mm Diameter
+44.33 mm Width
+67.5 Grams
+SPEC Bearing
+White CBC Pads
+
+4
+Base Weight: 63.92 grams
+Width: 45 mm
+Diameter: 53 mm
+Stock Response: Flow Groove
+Gap Width: 4.35 mm
+Bearing Size: Large (C) stainless steel (One Drop 10 Ball Bearing)
+Finish: Pyramatte (tm)
+Axle System: Side Effects(tm)
+Unresponsive / Nonresponsive: Requires a bind to wake up
+
+5
+Weight: 67 grams
+Diameter: 61 mm
+Width: 42 mm
+Response System: Silicone Stickers
+
+6
+Diameter: 56 mm 
+Width: 44 mm 
+Weight: 66 grams 
+Bearing: Large C 
+Includes 1 yoyo string
+Trapeze Width: 39 mm
+Style: String Trick (1A, 3A, 5A)
+Body Material: Aluminum Alloy
+Response: YYF CBC Pad large slim
+Bind: Bind Required
+
+7
+Weight: 65.1 grams
+Diameter: 57.11 mm
+Width: 42.97 mm
+Trapeze Width: 39 mm
+Style: String Trick (1A, 3A, 5A)
+Body Material: Aluminum Alloy (7075)
+Bearing: Large C
+Response: YYF CBC Pad Large Slim
+Bind: Bind Required
+
+8
+Weight: 66.1 grams
+Diameter: 56.15 mm
+Width: 44.26 mm
+Bearing Type: Large C - 10-Ball Bearing
+Response: Flow Groove
+Bind: Bind Required to wake
+Gap Width: 4.35 mm
