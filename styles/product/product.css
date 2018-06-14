@@ -1,0 +1,81 @@
+
+body{
+	margin: 0px;
+  	padding: 0px; 
+  	font-size: 20px;
+  	font-weight: lighter;
+  	color: #222;
+  	font-family: 'Segoe UI';
+	text-align: center;
+}
+
+div#products{
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	width: 92vw;
+}
+
+div#products > div.product{
+	display: inline-block;
+	float: left;
+	margin: 0px;
+	padding: 10px;
+	width: 280px;
+	height: 230px;
+	text-align: center;
+}
+
+div.product > div.headerProduct{
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+	width: inherit;
+	height: inherit;
+}
+
+div.headerProduct > img{
+	width: 200px;
+	height: 200px;
+}
+
+div.product > div.detailProduct{
+	display: none;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	width: inherit;
+	height: inherit;
+	background-color: lightgrey;
+	border: 5px dotted black;
+}
+
+div.text{
+	display: initial;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	top: 50%;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: inherit;
+	vertical-align: middle;
+	text-align: center;
+
+	transform: translateY(-50%);
+}
+
+div.product:hover > div.headerProduct{
+	display: none;
+}
+
+div.product:hover > div.detailProduct{
+	display: inline-block;
+}
+
+div.text > img{
+	display: inline;
+	width: 100px;
+	height: 100px;
+}

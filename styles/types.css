@@ -1,0 +1,136 @@
+#types{
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 60vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+#types > h1{
+    display: block;
+    width: inherit;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+}
+
+#types > .typeslevel{
+    width: 45%;
+    display: inline-block;
+    position: relative;
+    height: inherit;
+    margin: 0;
+    float: left;
+    text-align: center;
+}
+
+#types > .typeslevel > .container {
+    width: auto;
+    height: auto;
+}
+
+#types > .left {
+    width: 45%;
+    height: 70%;
+    border-right-style: solid;
+    border-color: black; 
+}
+
+#types > .right {
+    width: 45%;
+    height: 50vh;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+#types > .typeslevel > .container > img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#types > .typeslevel > .container > .typesdesc{
+    width: 50%;
+    display: block;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    background-color: #3f3e3e;
+    color: #f4f4f4;
+}
+
+#types > .typeslevel > .description{
+    position: absolute;
+    top: 0;
+    width: 40vw;
+    height: inherit;
+    text-align: center;
+    background-color: #3f3e3e;
+    display: none;
+    color: #f4f4f4;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+#types > .typeslevel > .description > h1{
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px){
+    #types > .typeslevel > .container > .typesdesc{
+        font-size: 15px;
+    }
+
+    #types > .left {
+        height: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 550px){
+    #types{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 30px;
+        width: 90vw;
+    }
+    #types > h1{
+        display: block;
+        width: inherit;
+        text-align: center;
+        margin-right: 0;
+        font-size: 40px;
+    }
+
+    #types > .left {
+        border-right-style: none;
+    }
+
+    #types > .typeslevel{
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    #types > .typeslevel > .container > img{
+        width: 50%;
+    }
+
+    #types > .typeslevel > .container > .typesdesc{
+        width: 80%;
+    }
+
+}

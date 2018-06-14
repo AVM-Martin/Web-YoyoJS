@@ -1,19 +1,26 @@
+<!-- views/basic.html -->
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Basic</title>
-	<link rel="stylesheet" type="text/css" href="../styles/product.css">
 	<link rel="stylesheet" type="text/css" href="../styles/base.css">
+	<link rel="stylesheet" type="text/css" href="../styles/responsive.css">
+	<link rel="stylesheet" type="text/css" href="../styles/product.css">
+	<link rel="stylesheet" type="text/css" href="../styles/product_responsive.css">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
-	<div class="products">
+<body onload="loadPage()">
+	<div id="products">
 		<div class="product">
 			<div class="headerProduct">
 				<img src="../assets/image/basic1.jpg"><br>
-				Duncan Proyo
+				<nav class="responsive">Duncan Proyo</nav>
 			</div>
 			<div class="detailProduct">
-				<div class="bubble">
+				<div class="text">
+					<img src="../assets/image/basic1.jpg"><br class="imageResponsive">
 					<b>Duncan Proyo</b><br>
 					Body material : plastic<br>
 					Machine type : regular
@@ -23,78 +30,99 @@
 		<div class="product">
 			<div class="headerProduct">
 				<img src="../assets/image/basic2.jpg"><br>
-				Duncan ProFly
+				<nav class="responsive">Duncan ProFly</nav>
 			</div>
 			<div class="detailProduct">
-				<br><br><br><b>Duncan ProFly</b>
-				<br>Body material : plastic
-				<br>Machine type : regular
+				<div class="text">
+					<img src="../assets/image/basic2.jpg"><br class="imageResponsive">
+					<b>Duncan ProFly</b>
+					<br>Body material : plastic
+					<br>Machine type : regular
+				</div>
 			</div>
 		</div>
 		<div class="product">
 			<div class="headerProduct">
 				<img src="../assets/image/basic3.png"><br>
-				Imperial®
+				<nav class="responsive">Imperial®</nav>
 			</div>
 			<div class="detailProduct">
-				<br><br><br><b>Imperial®</b>
-				<br>Body material : plastic
-				<br>Machine type : regular
+				<div class="text">
+					<img src="../assets/image/basic3.png"><br class="imageResponsive">
+					<b>Imperial®</b>
+					<br>Body material : plastic
+					<br>Machine type : regular
+				</div>
 			</div>
 		</div>
 		<div class="product">
 			<div class="headerProduct">
 				<img src="../assets/image/basic4.png"><br>
-				Butterfly®
+				<nav class="responsive">Butterfly®</nav>
 			</div>
 			<div class="detailProduct">
-				<br><br><br><b>Butterfly®</b>
-				<br>Body material : plastic
-				<br>Machine type : regular
+				<div class="text">
+					<img src="../assets/image/basic4.png"><br class="imageResponsive">
+					<b>Butterfly®</b>
+					<br>Body material : plastic
+					<br>Machine type : regular
+				</div>
 			</div>
 		</div>
 		<div class="product">
 			<div class="headerProduct">
 				<img src="../assets/image/basic5.jpg"><br>
-				Yomega Raider Yoyo
+				<nav class="responsive">Yomega Raider Yoyo</nav>
 			</div>
 			<div class="detailProduct">
-				<br><br><br><b>Yomega Raider Yoyo</b>
-				<br>Body material : plastic
-				<br>Machine type : bearing
+				<div class="text">
+					<img src="../assets/image/basic5.jpg"><br class="imageResponsive">
+					<b>Yomega Raider Yoyo</b>
+					<br>Body material : plastic
+					<br>Machine type : bearing
+				</div>
 			</div>
 		</div>
 		<div class="product">
 			<div class="headerProduct">
 				<img src="../assets/image/basic6.png"><br>
-				Limelight™ Yo-Yo
+				<nav class="responsive">Limelight™ Yo-Yo</nav>
 			</div>
 			<div class="detailProduct">
-				<br><br><br><b>Limelight™ Yo-Yo</b>
-				<br>Body material : plastic
-				<br> Machine type : regular
+				<div class="text">
+					<img src="../assets/image/basic6.png"><br class="imageResponsive">
+					<b>Limelight™ Yo-Yo</b>
+					<br>Body material : plastic
+					<br> Machine type : regular
+				</div>
 			</div>
 		</div>
 		<div class="product">
 			<div class="headerProduct">
 				<img src="../assets/image/basic7.jpg"><br>
-				Newton Wooden Yoyo
+				<nav class="responsive">Newton Wooden Yoyo</nav>
 			</div>
 			<div class="detailProduct">
-				<br><br><br><b>Newton Wooden Yoyo</b>
-				<br>Body material : wood
-				<br>Machine type : regular
+				<div class="text">
+					<img src="../assets/image/basic7.jpg"><br class="imageResponsive">
+					<b>Newton Wooden Yoyo</b>
+					<br>Body material : wood
+					<br>Machine type : regular
+				</div>
 			</div>
 		</div>
 		<div class="product">
 			<div class="headerProduct">
 				<img src="../assets/image/basic8.jpg"><br>
-				Spintastics Technic Yoyo
+				<nav class="responsive">Spintastics Technic Yoyo</nav>
 			</div>
 			<div class="detailProduct">
-				<br><br><br><b>Spintastics Technic Yoyo</b>
-				<br>Body material : wood
-				<br>Machine type : regular
+				<div class="text">
+					<img src="../assets/image/basic8.jpg"><br class="imageResponsive">
+					<b>Spintastics Technic Yoyo</b>
+					<br>Body material : plastic
+					<br>Machine type : regular
+				</div>
 			</div>
 		</div>
 	</div>
@@ -102,4 +130,8 @@
 	<div style="width: 80vw; height: 100px; background-color: red;"></div>
 	<br><br><br><br><br><br><br><br><br> -->
 </body>
+
+<script type="text/javascript" src="../scripts/libs/jquery-latest.min.js"></script>
+<script type="text/javascript" src="../scripts/product.js"></script>
+
 </html>

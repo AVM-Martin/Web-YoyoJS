@@ -1,64 +1,95 @@
-/* styles/responsive.css */
-
-/* for tablet */
-@media only screen and (min-width: 551px) and (max-width: 1150px){
-    div.subMenu{
-        font-size: 12px;
+@media only screen and (max-width: 1024px){
+    #first{
+        width: 100vw;
+        height: 100vh;
     }
+    #first > #title{
+        height: 50vh;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        display: block;
+        position: relative;
+    }
+    #first > #rightside{
+        height: 50vh;
+        width: 100vw;
+    }
+    #first > #rightside > #imagetop{
+        float: left;
+        height: inherit;
+        width: 50vw;
+        display: block;
+    }
+    #first > #rightside > #imagebottom{
+        float: right;
+        height: inherit;
+        width: 50vw;
+        display: block;
+    }
+    #first > #title > .container > img{
+        width: 100%;
+    }
+
+    #first > #title > .text{
+        top: 70%;
+        font-size: 25px;
+    }
+
+    #navbarMenu{
+        font-size: 10px;
+    }
+
 }
 
-/* for mobile phone */
+
 @media only screen and (max-width: 550px){
-
-    div.navbar > div#navbarLogo{
+    #first > #rightside{
+        height: 100vh;
+    }
+    #first > #title > .container > img{
         width: 100%;
-        background-position: center;
     }
 
-    div.navbar > div#navbarBurger{
+    #first > #rightside > #imagetop{
+        float: left;
+        height: 50vh;
+        width: inherit;
+        display: block;
+    }
+    #first > #rightside > #imagebottom{
+        float: right;
+        height: 50vh;
+        width: inherit;
+        display: block;
+    }
+    #first > #title > .text{
+        top: 70%;
+        font-size: 20px;
+    }
+
+    #navbarBurger{
         display: inline-block;
+        position: sticky;
     }
-
-    div.navbar > div#navbarMenu{
-        display: none;
-        margin-top: 0px;
-        width: 100%;
-        background-color: gray;
-    }
-
     div#navbarMenu > div.menuContent{
-        display: inline-block;
-        padding: 10px 0px 10px;
-        height: 20px;
-        width: 100%;
-        color: white;
-    }
-
-    div.menuContent > div.mainMenu{
-        display: inline-block;
-        padding: 0px 0px 10px;
-        height: 20px;
-        width: 100%;
-        color: white;
-        line-height: initial;
-    }
-
-    div.subMenu > a{
-        display: inline-block;
-        padding: 10px 0px 0px;
+        display: block;
         height: 30px;
         width: 100%;
-        color: white;
+        font-size: 18px;
+        position: relative;
     }
-
-    div.menuContent > div.subMenu{
-        position: initial;
-        background-color: gray;
+    #navbarMenu > .dropDown > .subContent {
+        display: block;
+        float: none;
+        position: relative;
+    }
+    #navbarMenu > .dropDown > .subContent > a {
+        display: block;
+        padding: 10px 0px 10px;
+        height: auto;
         width: 100%;
+        color: white;
+        position: relative;
     }
-
-    div.menuContent:hover > .subMenu {
-        /*display: none;*/
-    }
-
 }

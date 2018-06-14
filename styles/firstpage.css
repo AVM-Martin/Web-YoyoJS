@@ -1,0 +1,174 @@
+body{
+    font-family: "Segoe UI";
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#first{
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#first > #title{
+    height: inherit;
+    width: 50vw;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+#first > #title > .container{
+    display: block;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    text-align: center;
+}
+
+#first > #title > .container > img{
+    width: 120%;
+}
+
+#first > #title > .text{
+    width: inherit;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 35px;
+    text-align: center;
+}
+
+
+#first > #rightside{
+    height: inherit;
+    width: 50vw;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    float: left;
+    color: #ECECEA;
+    text-align: center;
+}
+
+#first > #rightside > #imagetop{
+    height: 50vh;
+    width: inherit;
+    background-size: cover;
+    background-image: url("../assets/types.jpg");
+    display: block;
+    position: relative;
+}
+
+#first > #rightside > #imagebottom{
+    height: 50vh;
+    width: inherit;
+    background-size: cover;
+    background-image: url("../assets/Practice.jpg");
+    display: block;
+    position: relative;
+}
+
+#first h1{
+    font-size: 40px;
+    margin: 0;
+}
+
+#first > #rightside .container{
+    height: inherit;
+    width: inherit;
+    display: block;
+    position: relative;
+    background-color: rgba(54,52,53,0.75);
+    font-size: 40px;
+}
+
+#first > #rightside .container > .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width: 1024px){
+    #first{
+        width: 100vw;
+        height: 100vh;
+    }
+    #first > #title{
+        height: 50vh;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        display: block;
+        position: relative;
+    }
+    #first > #rightside{
+        height: 50vh;
+        width: 100vw;
+    }
+    #first > #rightside > #imagetop{
+        float: left;
+        height: inherit;
+        width: 50vw;
+        display: block;
+    }
+    #first > #rightside > #imagebottom{
+        float: right;
+        height: inherit;
+        width: 50vw;
+        display: block;
+    }
+    #first > #title > .container > img{
+        width: 100%;
+    }
+
+    #first > #title > .text{
+        top: 70%;
+        font-size: 25px;
+    }
+    #first > #rightside .container{
+        font-size: 25px;
+    }
+}
+
+
+@media only screen and (max-width: 550px){
+    #first{
+        width: 100vw;
+        height: 150vh;
+    }
+    #first > #rightside{
+        height: 100vh;
+    }
+    #first > #title > .container > img{
+        width: 100%;
+    }
+
+    #first > #rightside > #imagetop{
+        float: left;
+        height: 50vh;
+        width: inherit;
+        display: block;
+    }
+    #first > #rightside > #imagebottom{
+        float: right;
+        height: 50vh;
+        width: inherit;
+        display: block;
+    }
+    #first > #title > .text{
+        top: 70%;
+        font-size: 20px;
+    }
+}
