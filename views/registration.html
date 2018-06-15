@@ -1,0 +1,152 @@
+<!-- views/registration.html -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Page</title>
+        <link rel="stylesheet" type="text/css" href="../styles/base.css">
+        <link rel="stylesheet" type="text/css" href="../styles/navbar.css">
+        <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+        <link rel="stylesheet" type="text/css" href="../styles/registration.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="navbar">
+            <a id = "logo" href="../index.html"></a>
+            <div id = "navbarBurger" onclick = "displayMenu()"></div>
+            <div id = "navbarMenu">
+                <a class="menuContent" href="../index.html">HOME</a>
+                <div class="menuContent">
+                    <div id = "dropDown" onclick = "displaySubMenu()">
+                        TYPES
+                    </div>
+                    <div class="subContent">
+                        <a href="basic.html">BASIC</a>
+                        <a href="professional.html">PROFESSIONAL</a>
+                    </div>
+                </div>
+                <a class="menuContent" href="tutorial.html">TUTORIALS</a>
+                <a class="menuContent" href="contact.html">CONTACTS</a>
+                <a class="menuContent" href="registration.html">REGISTRATION</a>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="signup">Sign Up</div>
+            <form method="post" id="registration" onsubmit="return validate()" action="#">
+                <div class="row">
+                    <div id="header">
+                        Registration
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col 1">
+                        Name
+                    </div>
+                    <div class="coll 1">
+                        <input type="text" name="name" placeholder="Your Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col 2">
+                        Email
+                    </div>
+                    <div class="coll 2">
+                        <input type="email" name="email" placeholder="test@example.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col 3">
+                        Password
+                    </div>
+                    <div class="coll 3">
+                        <input type="password" name="pass1" placeholder="Your Password">
+                    </div>
+                    <div class="col 3">
+                        (8-20 characters length)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col 4">
+                        Repeat Password
+                    </div>
+                    <div class="coll 4">
+                        <input type="password" name="pass2" placeholder="Repeat Your Password">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col 5">
+                        Address
+                    </div>
+                    <div class="coll 5">
+                        <textarea placeholder="Your Address" id="address" name="address"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col 6">
+                        City
+                    </div>
+                    <div class="coll 6">
+                        <select name="city">
+                            <option disabled selected>City</option>
+                            <option>Jakarta</option>
+                            <option>Bandung</option>
+                            <option>Tangerang</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col 7">
+                        Gender
+                    </div>
+                    <div class="coll 7">
+                        <div class="gen">
+                            <input type="radio" name="gender" placeholder="Male" id="male">Male
+                        </div>
+                        <div class="gen">
+                            <input type="radio" name="gender" placeholder="Female" id="female">Female
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col 8"></div>
+                    <div id="error">
+                    </div>
+                </div>
+
+                <div id="button">
+                    <input type="submit" name="Submit" id="submit" value="Submit">
+                    <input type="reset" name="Reset" id="reset" value="Reset">
+                </div>
+            </form>
+            <div id="background" onclick="exit()"></div>
+            <div id="dialog-box"></div>
+        </div>
+
+        <div id = "footer">
+            <div class = "container">
+                <div id = "text">
+                    Follow Us
+                </div>
+                <div id = "logo">
+                    <div class = "icon"><img src="../assets/socials/instagram-logo-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/tumblr-logo-button-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/twitter-logo-button-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/facebook-logo-button-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/google-plus-logo-button-white.png"></div>
+                </div>
+            </div><div class = "container">
+                <div id = "subscribe">
+                </div>
+                <div id = "copyright">
+                    Copyright &copy; JS Yoyo 2018
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../scripts/libs/jquery-latest.min.js"></script>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/registration.js"></script>
+</html>
+
+<!-- EOF -->

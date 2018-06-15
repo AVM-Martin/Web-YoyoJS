@@ -5,6 +5,9 @@ Please refresh after using another virtual device in order to revert all effect 
 
 Learning References:
 
+https://api.jquery.com/css/
+
+https://www.w3schools.com/Jsref/
 
 
 
@@ -26,3 +29,20 @@ http://www.yoyoplay.com/beginner-yoyos/
 https://www.yo-yo.com/beginner-yo-yo
 
 https://ingridnieto.com/2010/11/page/2/
+
+https://www.fontsmarket.com/font-download/segoe-ui
+
+https://www.w3schools.com/cssref/css3_pr_font-face_rule.asp
+
+https://stackoverflow.com/questions/2856502/css-font-face-not-working-with-firefox-but-working-with-chrome-and-ie
+
+https://cdn1.iconfinder.com/data/icons/mixed-17/16/icon_Left_Arrow-512.png
+
+https://cdn1.iconfinder.com/data/icons/mixed-17/16/icon_right_rounded-512.png
+
+http://www.designbolts.com/2013/02/04/50-free-grey-seamless-patterns-for-website-background/
+
+https://stackoverflow.com/questions/2901108/how-do-i-clear-this-setinterval
+
+https://stackoverflow.com/questions/2117538/how-to-uncheck-a-radio-button
+

@@ -1,2 +1,300 @@
 /* styles/tutorial.css */
 
+#content{
+    margin-bottom: 50px;
+}
+
+#content > h1{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+
+/* desktop */
+.desktop.tutorial{
+    display: block;
+    position: relative;
+    margin: 0px 10%;
+    padding: 0px;
+    width: 80%;
+    height: 70vh;
+    background-color: lightgrey;
+}
+
+.desktop .tutorialNavbar{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: green;
+}
+
+.desktop .tutorialType{
+    display: inline-block;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+    height: inherit;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.desktop .tutorialType.active{
+    background-color: lightgray;
+    color: initial;
+}
+
+.desktop .tutorialContainer{
+    display: block;
+    margin: 0px;
+    padding: 25px 0px 0px 0px;
+    width: 100%;
+    height: 150px;
+    background-color: inherit;
+    overflow: hidden;
+}
+
+.desktop .stepsContainer{
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 75%;
+    height: inherit;
+}
+
+.desktop .stepsContainer.active{
+    display: inline-block;
+
+    -webkit-animation: showTutorialContainer 0.5s;
+    -moz-animation: showTutorialContainer 0.5s;
+}
+
+@-webkit-keyframes showTutorialContainer{
+    0%  { height: 0px; }
+    100%{ height: inherit; }
+}
+@-moz-keyframes showTutorialContainer{
+    0%  { height: 0px; }
+    100%{ height: inherit; }
+}
+
+.desktop .step{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+    height: inherit;
+}
+
+.desktop .step > .stepImage{
+    display: inline-block;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+    height: inherit;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.desktop .step > .stepText{
+    display: inline-block;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 50%;
+    height: inherit;
+}
+
+.desktop .stepText > .stepTextContainer{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 150%;
+
+    transform: translate(-50%, -50%);
+}
+
+/* mobile */
+.mobile.tutorial{
+    display: block;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+}
+
+.mobile h1{ text-align: center; }
+
+.mobile .tutorialContainer{
+    display: block;
+    margin: 0px;
+    padding: 25px 0px 0px 0px;
+    width: 100%;
+    height: 350px;
+    background-color: lightgrey;
+    overflow: hidden;
+}
+
+.mobile .stepsContainer{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 75%;
+    height: inherit;
+}
+
+.mobile .step{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+    height: inherit;
+}
+
+.mobile .step > .stepImage{
+    display: block;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mobile .step > .stepText{
+    display: block;
+    float: left;
+    margin: 0px;
+    padding: 10px 10%;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+
+.tutorialGuidance#radio{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.radioContainer{
+    display: inline-block;
+}
+
+.tutorialGuidance#leftArrow{
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 50px;
+    height: inherit;
+    z-index: 1;
+    background-color: initial;
+}
+
+.tutorialGuidance#rightArrow{
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 50px;
+    height: inherit;
+    z-index: 1;
+    background-color: initial;
+}
+
+.tutorialGuidance > .tutorialArrow{
+    display: initial;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 270%;
+
+    transform: translateY(-50%);
+    background-color: rgba(150,150,150, 0.5);
+}
+
+.tutorialGuidance#leftArrow > .tutorialArrow{
+    background-image: url("../assets/icon_left.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+}
+
+.tutorialGuidance#rightArrow > .tutorialArrow{
+    background-image: url("../assets/icon_right.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 40px;
+}
+
+/* push the picture*/
+.elevator1{ background-image: url("../assets/tutorials/elevator1.jpg") }
+.elevator2{ background-image: url("../assets/tutorials/elevator2.jpg") }
+.elevator3{ background-image: url("../assets/tutorials/elevator3.jpg") }
+.forwardpass1{ background-image: url("../assets/tutorials/forwardpass1.jpg") }
+.forwardpass2{ background-image: url("../assets/tutorials/forwardpass2.jpg") }
+.forwardpass3{ background-image: url("../assets/tutorials/forwardpass3.jpg") }
+.forwardpass1{ background-image: url("../assets/tutorials/forwardpass1.jpg") }
+.forwardpass2{ background-image: url("../assets/tutorials/forwardpass2.jpg") }
+.longsleeper1{ background-image: url("../assets/tutorials/longsleeper1.jpg") }
+.longsleeper2{ background-image: url("../assets/tutorials/longsleeper2.jpg") }
+.longsleeper3{ background-image: url("../assets/tutorials/longsleeper3.jpg") }
+.rocket1{ background-image: url("../assets/tutorials/rocket1.jpg") }
+.rocket2{ background-image: url("../assets/tutorials/rocket2.jpg") }
+.rocket3{ background-image: url("../assets/tutorials/rocket3.jpg") }
+.rockthebaby1{ background-image: url("../assets/tutorials/rockthebaby1.jpg") }
+.rockthebaby2{ background-image: url("../assets/tutorials/rockthebaby2.jpg") }
+.rockthebaby3{ background-image: url("../assets/tutorials/rockthebaby3.jpg") }
+
+/* responsive */
+.mobile.tutorial{ display: none; }
+
+/* for tablet */
+@media only screen and (min-width: 551px) and (max-width: 1024px){
+    .desktop .tutorialType{
+        font-size: 16px;
+    }
+    .desktop .stepText > .stepTextContainer{
+        font-size: 120%;
+    }
+}
+
+/* for mobile phone */
+@media only screen and (max-width: 550px){
+    .desktop.tutorial{ display: none; }
+    .mobile.tutorial{ display: block; }
+}
+
+/* EOF */

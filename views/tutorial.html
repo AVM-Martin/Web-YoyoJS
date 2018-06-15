@@ -1,33 +1,347 @@
-<!-- views/home.html -->
+<!-- views/tutorial.html -->
 
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Tutorial</title>
-    <link rel="stylesheet" type="text/css" href="../styles/base.css">
-    <link rel="stylesheet" type="text/css" href="../styles/responsive.css">
-    <link rel="stylesheet" type="text/css" href="../styles/tutorial.css">
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="../styles/base.css">
+        <link rel="stylesheet" type="text/css" href="../styles/navbar.css">
+        <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+        <link rel="stylesheet" type="text/css" href="../styles/tutorial.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="navbar">
+            <a id = "logo" href="../index.html"></a>
+            <div id = "navbarBurger" onclick = "displayMenu()"></div>
+            <div id = "navbarMenu">
+                <a class="menuContent" href="../index.html">HOME</a>
+                <div class="menuContent">
+                    <div id = "dropDown" onclick = "displaySubMenu()">
+                        TYPES
+                    </div>
+                    <div class="subContent">
+                        <a href="basic.html">BASIC</a>
+                        <a href="professional.html">PROFESSIONAL</a>
+                    </div>
+                </div>
+                <a class="menuContent" href="tutorial.html">TUTORIALS</a>
+                <a class="menuContent" href="contact.html">CONTACTS</a>
+                <a class="menuContent" href="registration.html">REGISTRATION</a>
+            </div>
+        </div>
+        <div id="content">
+            <h1>Tutorials</h1>
+            <!-- desktop version -->
+            <div class="desktop tutorial">
+                <div class="tutorialNavbar">
+                    <div class="tutorialType active" onclick="showTutorial(this)">Elevator</div>
+                    <div class="tutorialType" onclick="showTutorial(this)">Forward Pass</div>
+                    <div class="tutorialType" onclick="showTutorial(this)">Long Sleeper</div>
+                    <div class="tutorialType" onclick="showTutorial(this)">Rocket</div>
+                    <div class="tutorialType" onclick="showTutorial(this)">Rock the Baby</div>
+                </div>
+                <div class="tutorialContainer">
+                    <div class="stepsContainer" id="elevator">
+                        <div class="step">
+                            <div class="stepImage elevator1"></div>
+                            <div class="stepText"> <div class="stepTextContainer">
+                                Use the forefinger of your left hand to raise the string outward. Let the yoyo come to the position near the yoyo finger riding on the string.
+                            </div> </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage elevator2"></div>
+                            <div class="stepText"> <div class="stepTextContainer">
+                                Now the right hand goes down and the yoyo rises up along the string stably.
+                            </div> </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage elevator3"></div>
+                            <div class="stepText"> <div class="stepTextContainer">
+                                When the yoyo reaches the position 8 cm close to the left hand, just flip it up with your left hand. Then, Catch it.
+                            </div> </div>
+                        </div>
+                    </div>
+                    <div class="stepsContainer" id="forwardpass">
+                        <div class="step">
+                            <div class="stepImage forwardpass1"></div>
+                            <div class="stepText"> <div class="stepTextContainer">
+                                Hold your yoyo in your hand with the palm backward. Throw a hard spin forward from behind you. Let the yoyo swing.
+                            </div> </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage forwardpass2"></div>
+                            <div class="stepText"> <div class="stepTextContainer">
+                                Give a slight jerk to the string and bring back the yoyo to your hand. Catch the yoyo with your palm up.
+                            </div> </div>
+                        </div>
+                    </div>
+                    <div class="stepsContainer" id="longsleeper">
+                        <div class="step">
+                            <div class="stepImage longsleeper1"></div>
+                            <div class="stepText"> <div class="stepTextContainer">
+                                Throw the yoyo down.
+                            </div> </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage longsleeper2"></div>
+                            <div class="stepText"> <div class="stepTextContainer">
+                                To hold the hand still, allowing the yoyo to spin or to sleep.
+                            </div> </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage longsleeper3"></div>
+                            <div class="stepText"> <div class="stepTextContainer">
+                                When you feel the yoyo slow down in the spinning, give the string a jerk and bring the yoyo back to your hand.
+                            </div> </div>
+                        </div>
+                    </div>
+                    <div class="stepsContainer" id="rocket">
+                        <div class="step">
+                            <div class="stepImage rocket1"></div>
+                            <div class="stepText"> <div class="stepTextContainer">
+                                Throw a hard sleeper and then quickly remove the slip knot around your finger.
+                            </div> </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage rocket2"></div>
+                            <div class="stepText"> <div class="stepTextContainer">
+                                Hold the end of the string, take a jerk to the string and release the yoyo up to the open air.
+                            </div> </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage rocket3"></div>
+                            <div class="stepText"> <div class="stepTextContainer">
+                                When the yoyo falls down, go and catch it with your hands.
+                            </div> </div>
+                        </div>
+                    </div>
+                    <div class="stepsContainer" id="rockthebaby">
+                        <div class="step">
+                            <div class="stepImage rockthebaby1"></div>
+                            <div class="stepText"> <div class="stepTextContainer">
+                                First hold your right hand high in front of you and hang the yoyo down without spin.
+                            </div> </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage rockthebaby2"></div>
+                            <div class="stepText"> <div class="stepTextContainer">
+                                Keep the string up at the middle of it with your left hand. Hold the string at its section 12 cm to the yoyo forming an inverse triangle.
+                            </div> </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage rockthebaby3"></div>
+                            <div class="stepText"> <div class="stepTextContainer">
+                                Exchange the position of the triangle by moving the hands up and down to build a triangular cradle. Swing the yoyo inside the cradle.
+                            </div> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorialGuidance" id="radio">
+                    <div class="radioContainer">Please check your connection if you see this text</div>
+                </div>
+                <div class="tutorialGuidance" id="leftArrow">
+                    <div class="tutorialArrow" onclick="moveSlider('.desktop', -1)"></div>
+                </div>
+                <div class="tutorialGuidance" id="rightArrow">
+                    <div class="tutorialArrow" onclick="moveSlider('.desktop', 1)"></div>
+                </div>
+            </div>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-    <div class="navbar"></div>
-    <div class="content">
-        <button onclick="show()">Press to test</button>
-        <span id="___collapse" style="display: none;">
-            halo<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>halo
-        </span>
-    </div>
-    <div class="footer"></div>
+            <!-- mobile version -->
+            <div class="mobile tutorial" id="elevator">
+                <h1>Elevator</h1>
+                <div class="tutorialContainer">
+                    <div class="stepsContainer" id="elevator">
+                        <div class="step">
+                            <div class="stepImage elevator1"></div>
+                            <div class="stepText">
+                                Use the forefinger of your left hand to raise the string outward. Let the yoyo come to the position near the yoyo finger riding on the string.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage elevator2"></div>
+                            <div class="stepText">
+                                Now the right hand goes down and the yoyo rises up along the string stably.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage elevator3"></div>
+                            <div class="stepText">
+                                When the yoyo reaches the position 8 cm close to the left hand, just flip it up with your left hand. Then, Catch it.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorialGuidance" id="radio">
+                    <div class="radioContainer">Please check your connection if you see this text</div>
+                </div>
+                <div class="tutorialGuidance" id="leftArrow">
+                    <div class="tutorialArrow" onclick="moveSlider('.mobile#elevator', -1)"></div>
+                </div>
+                <div class="tutorialGuidance" id="rightArrow">
+                    <div class="tutorialArrow" onclick="moveSlider('.mobile#elevator', 1)"></div>
+                </div>
+            </div>
 
-    <script type="text/javascript" src="../scripts/responsive.js"></script>
-    <script type="text/javascript">
-        var imgDisp=false;
-        function show(){
-            imgDisp=!imgDisp;
-            if(imgDisp)document.getElementById("___collapse").style.display="block";
-            else document.getElementById("___collapse").style.display="none";
-        }
-    </script>
-</body>
+            <div class="mobile tutorial" id="forwardpass">
+                <h1>Forward Pass</h1>
+                <div class="tutorialContainer">
+                    <div class="stepsContainer" id="forwardpass">
+                        <div class="step">
+                            <div class="stepImage forwardpass1"></div>
+                            <div class="stepText">
+                                Hold your yoyo in your hand with the palm backward. Throw a hard spin forward from behind you. Let the yoyo swing.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage forwardpass2"></div>
+                            <div class="stepText">
+                                Give a slight jerk to the string and bring back the yoyo to your hand. Catch the yoyo with your palm up.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorialGuidance" id="radio">
+                    <div class="radioContainer">Please check your connection if you see this text</div>
+                </div>
+                <div class="tutorialGuidance" id="leftArrow">
+                    <div class="tutorialArrow" onclick="moveSlider('.mobile#forwardpass', -1)"></div>
+                </div>
+                <div class="tutorialGuidance" id="rightArrow">
+                    <div class="tutorialArrow" onclick="moveSlider('.mobile#forwardpass', 1)"></div>
+                </div>
+            </div>
+
+            <div class="mobile tutorial" id="longsleeper">
+                <h1>Long Sleeper</h1>
+                <div class="tutorialContainer">
+                    <div class="stepsContainer" id="longsleeper">
+                        <div class="step">
+                            <div class="stepImage longsleeper1"></div>
+                            <div class="stepText">
+                                Throw the yoyo down.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage longsleeper2"></div>
+                            <div class="stepText">
+                                To hold the hand still, allowing the yoyo to spin or to sleep.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage longsleeper3"></div>
+                            <div class="stepText">
+                                When you feel the yoyo slow down in the spinning, give the string a jerk and bring the yoyo back to your hand.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorialGuidance" id="radio">
+                    <div class="radioContainer">Please check your connection if you see this text</div>
+                </div>
+                <div class="tutorialGuidance" id="leftArrow">
+                    <div class="tutorialArrow" onclick="moveSlider('.mobile#longsleeper', -1)"></div>
+                </div>
+                <div class="tutorialGuidance" id="rightArrow">
+                    <div class="tutorialArrow" onclick="moveSlider('.mobile#longsleeper', 1)"></div>
+                </div>
+            </div>
+
+            <div class="mobile tutorial" id="rocket">
+                <h1>Rocket</h1>
+                <div class="tutorialContainer">
+                    <div class="stepsContainer" id="rocket">
+                        <div class="step">
+                            <div class="stepImage rocket1"></div>
+                            <div class="stepText">
+                                Throw a hard sleeper and then quickly remove the slip knot around your finger.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage rocket2"></div>
+                            <div class="stepText">
+                                Hold the end of the string, take a jerk to the string and release the yoyo up to the open air.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage rocket3"></div>
+                            <div class="stepText">
+                                When the yoyo falls down, go and catch it with your hands.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorialGuidance" id="radio">
+                    <div class="radioContainer">Please check your connection if you see this text</div>
+                </div>
+                <div class="tutorialGuidance" id="leftArrow">
+                    <div class="tutorialArrow" onclick="moveSlider('.mobile#rocket', -1)"></div>
+                </div>
+                <div class="tutorialGuidance" id="rightArrow">
+                    <div class="tutorialArrow" onclick="moveSlider('.mobile#rocket', 1)"></div>
+                </div>
+            </div>
+
+            <div class="mobile tutorial" id="rockthebaby">
+                <h1>Rock The Baby</h1>
+                <div class="tutorialContainer">
+                    <div class="stepsContainer" id="rockthebaby">
+                        <div class="step">
+                            <div class="stepImage rockthebaby1"></div>
+                            <div class="stepText">
+                                First hold your right hand high in front of you and hang the yoyo down without spin.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage rockthebaby2"></div>
+                            <div class="stepText">
+                                Keep the string up at the middle of it with your left hand. Hold the string at its section 12 cm to the yoyo forming an inverse triangle.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepImage rockthebaby3"></div>
+                            <div class="stepText">
+                                Exchange the position of the triangle by moving the hands up and down to build a triangular cradle. Swing the yoyo inside the cradle.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tutorialGuidance" id="radio">
+                    <div class="radioContainer">Please check your connection if you see this text</div>
+                </div>
+                <div class="tutorialGuidance" id="leftArrow">
+                    <div class="tutorialArrow" onclick="moveSlider('.mobile#rockthebaby', -1)"></div>
+                </div>
+                <div class="tutorialGuidance" id="rightArrow">
+                    <div class="tutorialArrow" onclick="moveSlider('.mobile#rockthebaby', 1)"></div>
+                </div>
+            </div>
+        </div>
+        <div id = "footer">
+            <div class = "container">
+                <div id = "text">
+                    Follow Us
+                </div>
+                <div id = "logo">
+                    <div class = "icon"><img src="../assets/socials/instagram-logo-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/tumblr-logo-button-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/twitter-logo-button-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/facebook-logo-button-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/google-plus-logo-button-white.png"></div>
+                </div>
+            </div><div class = "container">
+                <div id = "subscribe">
+                </div>
+                <div id = "copyright">
+                    Copyright &copy; JS Yoyo 2018
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../scripts/libs/jquery-latest.min.js"></script>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/tutorial.js"></script>
 </html>
+
+<!-- EOF -->

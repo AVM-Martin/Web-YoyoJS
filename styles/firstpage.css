@@ -1,0 +1,167 @@
+/* styles/firstpage.css */
+
+body{
+    font-weight: bold;
+    text-align: center;
+}
+
+#first{
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#first > #title{
+    height: inherit;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+
+#first > #title > .container{
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 35px;
+    text-align: center;
+}
+
+#first > #title > .container > img{
+    width: 60%;
+}
+
+#first > #rightside{
+    height: inherit;
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    float: left;
+    color: #ECECEA;
+    text-align: center;
+}
+
+#first > #rightside > #imagetop{
+    display: block;
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../assets/types.jpg");
+    color: inherit;
+}
+
+#first > #rightside > #imagebottom{
+    display: block;
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../assets/Practice.jpg");
+    color: inherit;
+}
+
+#first h1{
+    font-size: 40px;
+    margin: 0;
+}
+
+#first > #rightside .container{
+    height: inherit;
+    width: 100%;
+    display: block;
+    position: relative;
+    background-color: rgba(54,52,53,0.75);
+    font-size: 40px;
+}
+
+#first > #rightside .container > .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media only screen and (max-width: 1024px){
+    #first{
+        width: 100%;
+        height: 100vh;
+    }
+
+    #first > #title{
+        height: 50vh;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: block;
+        position: relative;
+    }
+
+    #first > #title > .container{
+        font-size: 25px;
+    }
+
+    #first > #rightside{
+        height: 50vh;
+        width: 100%;
+    }
+
+    #first > #rightside > #imagetop{
+        float: left;
+        height: inherit;
+        width: 50%;
+        display: block;
+    }
+
+    #first > #rightside > #imagebottom{
+        float: right;
+        height: inherit;
+        width: 50%;
+        display: block;
+    }
+
+    #first > #rightside .container{
+        font-size: 25px;
+    }
+}
+
+
+@media only screen and (max-width: 550px){
+    #first{
+        width: 100%;
+        height: 150vh;
+    }
+
+    #first > #title > .text{
+        font-size: 20px;
+    }
+
+    #first > #rightside{
+        height: 100vh;
+    }
+
+    #first > #rightside > #imagetop{
+        float: left;
+        height: 50vh;
+        width: inherit;
+        display: block;
+    }
+
+    #first > #rightside > #imagebottom{
+        float: right;
+        height: 50vh;
+        width: inherit;
+        display: block;
+    }
+}
+
+/* EOF */

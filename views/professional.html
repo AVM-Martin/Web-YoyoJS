@@ -1,63 +1,174 @@
+<!-- views/professional.html -->
+
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Professional</title>
-	<link rel="stylesheet" type="text/css" href="../styles/product.css">
-	<link rel="stylesheet" type="text/css" href="../styles/base.css">
-</head>
-<body>
-	<div class="table basic">
-		<div class="row">
-			<div class="cell"><img src="../assets/image/pro1.jpg"></div>
-			<div class="cell"><img src="../assets/image/pro2.jpg"></div>
-			<div class="cell"><img src="../assets/image/pro3.jpg"></div>
-			<div class="cell"><img src="../assets/image/pro4.jpg"></div>
-		</div>
-		<div class="row">
-			<div class="cell">YoYo Factory DV888</div>
-			<div class="cell">One Drop Cabal Yoyo</div>
-			<div class="cell">Yoyo Factory Shutter Yoyo</div>
-			<div class="cell">One Drop Cascade Yoyo</div>
-		</div>
-		<div class="row">
-			<div class="cell price">450.000 IDR</div>
-			<div class="cell price">850.000 IDR</div>
-			<div class="cell price">700.000 IDR</div>
-			<div class="cell price">1.500.000 IDR</div>
-		</div>
-		<div class="row">
-			<div class="cell"><a href="#">Buy Now</a></div>
-			<div class="cell"><a href="#">Buy Now</a></div>
-			<div class="cell"><a href="#">Buy Now</a></div>
-			<div class="cell"><a href="#">Buy Now</a></div>
-		</div>
-	</div>
-
-	<div class="table basic">
-		<div class="row">
-			<div class="cell"><img src="../assets/image/pro5.jpg"></div>
-			<div class="cell"><img src="../assets/image/pro6.jpg"></div>
-			<div class="cell"><img src="../assets/image/pro7.jpg"></div>
-			<div class="cell"><img src="../assets/image/pro8.jpg"></div>
-		</div>
-		<div class="row">
-			<div class="cell">Henry's Python Yoyo</div>
-			<div class="cell">Recess Joyride Yoyo</div>
-			<div class="cell">Yoyo Factory Ex-Machina</div>
-			<div class="cell">One Drop Gradient Yoyo</div>
-		</div>
-		<div class="row">
-			<div class="cell price">900.000 IDR</div>
-			<div class="cell price">675.000 IDR</div>
-			<div class="cell price">1.650.000 IDR</div>
-			<div class="cell price">1.200.000 IDR</div>
-		</div>
-		<div class="row">
-			<div class="cell"><a href="#">Buy Now</a></div>
-			<div class="cell"><a href="#">Buy Now</a></div>
-			<div class="cell"><a href="#">Buy Now</a></div>
-			<div class="cell"><a href="#">Buy Now</a></div>
-		</div>
-	</div>
-</body>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="../styles/base.css">
+        <link rel="stylesheet" type="text/css" href="../styles/navbar.css">
+        <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+        <link rel="stylesheet" type="text/css" href="../styles/product.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="navbar">
+            <a id = "logo" href="../index.html"></a>
+            <div id = "navbarBurger" onclick = "displayMenu()"></div>
+            <div id = "navbarMenu">
+                <a class="menuContent" href="../index.html">HOME</a>
+                <div class="menuContent">
+                    <div id = "dropDown" onclick = "displaySubMenu()">
+                        TYPES
+                    </div>
+                    <div class="subContent">
+                        <a href="basic.html">BASIC</a>
+                        <a href="professional.html">PROFESSIONAL</a>
+                    </div>
+                </div>
+                <a class="menuContent" href="tutorial.html">TUTORIALS</a>
+                <a class="menuContent" href="contact.html">CONTACTS</a>
+                <a class="menuContent" href="registration.html">REGISTRATION</a>
+            </div>
+        </div>
+        <h1>Professional Yoyo</h1>
+        <div id="products">
+            <div class="product">
+                <div class="headerProduct">
+                    <img src="../assets/products/pro1.jpg"><br>
+                    <nav class="responsive">YoYo Factory DV888</nav>
+                </div>
+                <div class="detailProduct">
+                    <div class="text">
+                        <img src="../assets/products/pro1.jpg"><br class="imageResponsive">
+                        <b>YoYo Factory DV888</b><br>
+                        Body material : aluminium<br>
+                        Machine type : bearing
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="headerProduct">
+                    <img src="../assets/products/pro2.jpg"><br>
+                    <nav class="responsive">One Drop Cabal Yoyo</nav>
+                </div>
+                <div class="detailProduct">
+                    <div class="text">
+                        <img src="../assets/products/pro2.jpg"><br class="imageResponsive">
+                        <b>One Drop Cabal Yoyo</b>
+                        <br>Body material : stainless steel
+                        <br>Machine type : bearing
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="headerProduct">
+                    <img src="../assets/products/pro3.jpg"><br>
+                    <nav class="responsive">Yoyo Factory Shutter Yoyo</nav>
+                </div>
+                <div class="detailProduct">
+                    <div class="text">
+                        <img src="../assets/products/pro3.jpg"><br class="imageResponsive">
+                        <b>Yoyo Factory Shutter Yoyo</b>
+                        <br>Body material : CBC plastic
+                        <br>Machine type : bearing
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="headerProduct">
+                    <img src="../assets/products/pro4.jpg"><br>
+                    <nav class="responsive">One Drop Cascade Yoyo</nav>
+                </div>
+                <div class="detailProduct">
+                    <div class="text">
+                        <img src="../assets/products/pro4.jpg"><br class="imageResponsive">
+                        <b>One Drop Cascade Yoyo</b>
+                        <br>Body material : stainless steel
+                        <br>Machine type : bearing
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="headerProduct">
+                    <img src="../assets/products/pro5.jpg"><br>
+                    <nav class="responsive">Henry's Python Yoyo</nav>
+                </div>
+                <div class="detailProduct">
+                    <div class="text">
+                        <img src="../assets/products/pro5.jpg"><br class="imageResponsive">
+                        <b>Henry's Python Yoyo</b>
+                        <br>Body material : silicone
+                        <br>Machine type : bearing
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="headerProduct">
+                    <img src="../assets/products/pro6.jpg"><br>
+                    <nav class="responsive">Recess Joyride Yoyo</nav>
+                </div>
+                <div class="detailProduct">
+                    <div class="text">
+                        <img src="../assets/products/pro6.jpg"><br class="imageResponsive">
+                        <b>Recess Joyride Yoyo</b>
+                        <br>Body material : aluminium
+                        <br> Machine type : bearing
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="headerProduct">
+                    <img src="../assets/products/pro7.jpg"><br>
+                    <nav class="responsive">Yoyo Factory Ex-Machina</nav>
+                </div>
+                <div class="detailProduct">
+                    <div class="text">
+                        <img src="../assets/products/pro7.jpg"><br class="imageResponsive">
+                        <b>Yoyo Factory Ex-Machina</b>
+                        <br>Body material : aluminium
+                        <br>Machine type : bearing
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="headerProduct">
+                    <img src="../assets/products/pro8.jpg"><br>
+                    <nav class="responsive">One Drop Gradient Yoyo</nav>
+                </div>
+                <div class="detailProduct">
+                    <div class="text">
+                        <img src="../assets/products/pro8.jpg"><br class="imageResponsive">
+                        <b>One Drop Gradient Yoyo</b>
+                        <br>Body material : aluminium
+                        <br>Machine type : bearing
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "footer">
+            <div class = "container">
+                <div id = "text">
+                    Follow Us
+                </div>
+                <div id = "logo">
+                    <div class = "icon"><img src="../assets/socials/instagram-logo-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/tumblr-logo-button-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/twitter-logo-button-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/facebook-logo-button-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/google-plus-logo-button-white.png"></div>
+                </div>
+            </div><div class = "container">
+                <div id = "subscribe">
+                </div>
+                <div id = "copyright">
+                    Copyright &copy; JS Yoyo 2018
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../scripts/libs/jquery-latest.min.js"></script>
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/product.js"></script>
 </html>
+
+<!-- EOF -->

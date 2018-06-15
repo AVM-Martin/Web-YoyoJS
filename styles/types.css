@@ -1,0 +1,112 @@
+/* styles/types.css */
+
+#types{
+    display: block;
+    position: relative;
+    width: 80%;
+    margin: 30px 10%;
+    padding: 0px;
+}
+
+#types > h1{
+    display: block;
+    text-align: center;
+    margin: 0px 0px 20px;
+    font-size: 40px;
+}
+
+#types > .typeslevel{
+    width: calc(50% - 4px);
+    display: inline-block;
+    margin: 0px;
+    text-align: center;
+}
+
+#types > .typeslevel > .container{
+    width: auto;
+    height: auto;
+}
+
+#types > .left{
+    border-right-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+#types > .typeslevel > .container > img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#types > .typeslevel > .container > .typesdesc{
+    width: 50%;
+    display: block;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    background-color: #3f3e3e;
+    color: #f4f4f4;
+}
+
+#types > .typeslevel > .description{
+    position: absolute;
+    top: 0;
+    width: 40vw;
+    height: inherit;
+    text-align: center;
+    background-color: #3f3e3e;
+    display: none;
+    color: #f4f4f4;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+#types > .typeslevel > .description > h1{
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px){
+    #types > .typeslevel > .container > .typesdesc{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #types{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 30px;
+        width: 90%;
+    }
+
+    #types > .left{
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    #types > .typeslevel{
+        display: block;
+        width: 100%;
+    }
+
+    #types > .typeslevel > .container > .typesdesc{
+        width: 100%;
+    }
+
+}
+
+/* EOF */
