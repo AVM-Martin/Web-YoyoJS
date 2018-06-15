@@ -1,14 +1,13 @@
+/* styles/firstpage.css */
+
 body{
-    font-family: "Segoe UI";
     font-weight: bold;
-    padding: 0;
-    margin: 0;
     text-align: center;
 }
 
 #first{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     padding: 0;
     margin: 0;
     position: relative;
@@ -16,7 +15,7 @@ body{
 
 #first > #title{
     height: inherit;
-    width: 50vw;
+    width: 50%;
     padding: 0;
     margin: 0;
     display: inline-block;
@@ -26,22 +25,9 @@ body{
 
 #first > #title > .container{
     display: block;
-    top: 40%;
-    left: 50%;
+    width: 100%;
     position: absolute;
-    transform: translate(-50%,-50%);
-    font-size: 30px;
-    text-align: center;
-}
-
-#first > #title > .container > img{
-    width: 120%;
-}
-
-#first > #title > .text{
-    width: inherit;
-    position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
@@ -49,10 +35,13 @@ body{
     text-align: center;
 }
 
+#first > #title > .container > img{
+    width: 60%;
+}
 
 #first > #rightside{
     height: inherit;
-    width: 50vw;
+    width: 50%;
     padding: 0;
     margin: 0;
     display: inline-block;
@@ -62,21 +51,23 @@ body{
 }
 
 #first > #rightside > #imagetop{
-    height: 50vh;
-    width: inherit;
-    background-size: cover;
-    background-image: url("../assets/types.jpg");
     display: block;
     position: relative;
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../assets/types.jpg");
+    color: inherit;
 }
 
 #first > #rightside > #imagebottom{
-    height: 50vh;
-    width: inherit;
-    background-size: cover;
-    background-image: url("../assets/Practice.jpg");
     display: block;
     position: relative;
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../assets/Practice.jpg");
+    color: inherit;
 }
 
 #first h1{
@@ -86,7 +77,7 @@ body{
 
 #first > #rightside .container{
     height: inherit;
-    width: inherit;
+    width: 100%;
     display: block;
     position: relative;
     background-color: rgba(54,52,53,0.75);
@@ -102,41 +93,42 @@ body{
 
 @media only screen and (max-width: 1024px){
     #first{
-        width: 100vw;
+        width: 100%;
         height: 100vh;
     }
+
     #first > #title{
         height: 50vh;
-        width: 100vw;
+        width: 100%;
         padding: 0;
         margin: 0;
         display: block;
         position: relative;
     }
+
+    #first > #title > .container{
+        font-size: 25px;
+    }
+
     #first > #rightside{
         height: 50vh;
-        width: 100vw;
-    }
-    #first > #rightside > #imagetop{
-        float: left;
-        height: inherit;
-        width: 50vw;
-        display: block;
-    }
-    #first > #rightside > #imagebottom{
-        float: right;
-        height: inherit;
-        width: 50vw;
-        display: block;
-    }
-    #first > #title > .container > img{
         width: 100%;
     }
 
-    #first > #title > .text{
-        top: 70%;
-        font-size: 25px;
+    #first > #rightside > #imagetop{
+        float: left;
+        height: inherit;
+        width: 50%;
+        display: block;
     }
+
+    #first > #rightside > #imagebottom{
+        float: right;
+        height: inherit;
+        width: 50%;
+        display: block;
+    }
+
     #first > #rightside .container{
         font-size: 25px;
     }
@@ -145,14 +137,16 @@ body{
 
 @media only screen and (max-width: 550px){
     #first{
-        width: 100vw;
+        width: 100%;
         height: 150vh;
     }
+
+    #first > #title > .text{
+        font-size: 20px;
+    }
+
     #first > #rightside{
         height: 100vh;
-    }
-    #first > #title > .container > img{
-        width: 100%;
     }
 
     #first > #rightside > #imagetop{
@@ -161,14 +155,13 @@ body{
         width: inherit;
         display: block;
     }
+
     #first > #rightside > #imagebottom{
         float: right;
         height: 50vh;
         width: inherit;
         display: block;
     }
-    #first > #title > .text{
-        top: 70%;
-        font-size: 20px;
-    }
 }
+
+/* EOF */

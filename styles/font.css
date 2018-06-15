@@ -1,0 +1,13 @@
+/* styles/font */
+
+@font-face{
+    font-family: "Segoe UI";
+    src: url("../assets/fonts/segoe-ui.ttf");
+}
+
+@font-face{
+    font-family: "Open Sans";
+    src:url("../assets/font/OpenSans-Regular.ttf");
+}
+
+/* EOF */

@@ -1,0 +1,13 @@
+/* styles/base.css */
+
+@import url("font.css");
+
+body{
+    font-family: "Segoe UI";
+    padding: 0px;
+    margin: 0px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+/* EOF */

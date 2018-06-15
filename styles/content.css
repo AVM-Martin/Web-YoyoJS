@@ -1,8 +1,10 @@
+/* styles/content.css */
+
 #content{
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: auto;
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
@@ -10,38 +12,41 @@
     display: block;
     width: inherit;
     position: relative;
-    height: 33vh;
+    height: calc(33vh - 80px);
+    padding: 40px 0px;
 }
 
-#content  .odd{
+#content .odd{
     color: #ECECEA;
-    width: inherit;
     background-color: #545253;
-    height: 33vh;
 }
 
-#content > .container > .box {
-    width: inherit;
-    float: left;
+#content > .container > .box{
+    margin: 0px 10%;
+    position: relative;
+    width: 80%;
+    height: 100%;
 }
 
 #content > .container > .box > .img{
     display: inline-block;
-    width: 30%;
-    height: inherit;
+    position: absolute;
+    width: 40%;
     top: 50%;
-    transform: translateY(10%);
+    left: 0px;
+    transform: translateY(-50%);
 }
 
 #content > .container > .box > .text{
     display: inline-block;
-    width: 50%;
-    height: inherit;
+    position: absolute;
+    width: 60%;
     margin: 0;
     padding: 0;
     font-size: 25px;
     top: 50%;
-    transform: translateY(10%);
+    right: 0px;
+    transform: translateY(-50%);
 }
 
 #content > .container > .box > .text > h1{
@@ -51,50 +56,28 @@
 }
 
 @media only screen and (max-width: 1024px){
-    #content > .container {
-        display: block;
-        height: 35vh;
-    }
-    #content > .container > .box > .img{
-        top: 50%;
-        transform: translateY(20%);
-    }
     #content > .container > .box > .text{
-        display: inline-block;
-        width: 50%;
-        margin: 0;
-        padding: 0;
         font-size: 18px;
-        top: 50%;
-        transform: translateY(0%);
     }
 }
 
-
 @media only screen and (max-width: 550px){
     #content > .container{
-        display: block;
-        width: inherit;
-        position: relative;
+        padding: 20px 0px;
+        width: 100%;
         height: auto;
-    }
-    #content .odd{
-        display: block;
-        width: inherit;
-        height: auto;
-        float: none;
     }
 
-    #content > .container > .box {
-        padding-left: 0;
-        padding-right: 0;
-        width: inherit;
-        float: left;
+    #content > .container > .box{
         display: block;
+        position: initial;
+        margin: 0px 10px;
+        width: calc(100% - 20px);
     }
 
     #content > .container > .box > .img{
         display: block;
+        position: initial;
         width: 100%;
         height: inherit;
         margin: 0;
@@ -104,6 +87,7 @@
 
     #content > .container > .box > .text{
         display: block;
+        position: initial;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -112,3 +96,5 @@
         transform: translateY(0);
     }
 }
+
+/* EOF */

@@ -1,10 +1,147 @@
+<!-- views/home.html -->
+
 <!DOCTYPE html>
 <html>
-<head>
-    <title>asdf</title>
-</head>
-<body>
-    <a href="~"></a>
-
-</body>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="styles/base.css">
+        <link rel="stylesheet" type="text/css" href="styles/firstpage.css">
+        <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+        <link rel="stylesheet" type="text/css" href="styles/content.css">
+        <link rel="stylesheet" type="text/css" href="styles/types.css">
+        <link rel="stylesheet" type="text/css" href="styles/footer.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id = "first">
+            <div id = "title">
+                <div class = "container">
+                    <img src="assets/logos/logo.png"><br>
+                    A PLACE FOR VARIOUS THINGS ABOUT YOYOS
+                </div>
+            </div>
+            <div id = "rightside">
+                <a id = "imagetop" href="#types">
+                    <div class = "container">
+                        <div class = "text">
+                            <h1>TYPES</h1>
+                            Search numerous types of yoys and its specification
+                        </div>
+                    </div>
+                </a>
+                <a id = "imagebottom" href="#">
+                    <div class = "container">
+                        <div class = "text">
+                            <h1>TUTORIAL</h1>
+                            Learn to play yoyo from beginner to advance trick
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="navbar">
+            <a id = "logo" href="index.html"></a>
+            <div id = "navbarBurger" onclick = "displayMenu()"></div>
+            <div id = "navbarMenu">
+                <a class="menuContent" href="index.html">HOME</a>
+                <div class="menuContent">
+                    <div id = "dropDown" onclick = "displaySubMenu()">
+                        TYPES
+                    </div>
+                    <div class="subContent">
+                        <a href="views/basic.html">BASIC</a>
+                        <a href="views/professional.html">PROFESSIONAL</a>
+                    </div>
+                </div>
+                <a class="menuContent" href="views/tutorial.html">TUTORIALS</a>
+                <a class="menuContent" href="views/contact.html">CONTACTS</a>
+                <a class="menuContent" href="views/registration.html">REGISTRATION</a>
+            </div>
+        </div>
+        <div id = "content">
+            <div class = "container odd">
+                <div class = "box odd">
+                    <div class = "img">
+                        <img src = "assets/yoyo.png">
+                    </div>
+                    <div class = "text">
+                        <h1>Find Any Yoyos</h1>
+                        JsYoyo is a yoyo company that has a variety of yoyos, from basic yoyos to professional yoyos.
+                    </div>
+                </div>
+            </div>
+            <div class = "container">
+                <div class = "box">
+                    <div class = "img">
+                        <img src = "assets/factory.png">
+                    </div>
+                    <div class = "text">
+                        <h1>Outstanding Company</h1>
+                        We had sponsored some of the famous yoyo performances and competitions around the world.
+                    </div>
+                </div>
+            </div>
+            <div class = "container odd">
+                <div class = "box odd">
+                    <div class = "img">
+                        <img src = "assets/customer-service.png">
+                    </div>
+                    <div class = "text">
+                        <h1>Excellence Service</h1>
+                        Quality and customer happiness is foundation of JsYoyo. We always try our best to make a happy world
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "types">
+            <h1>TYPES</h1>
+            <div class = "typeslevel left">
+                <div class = "container" onclick = "container(0)">
+                    <img src = "assets/homebeginner.png" id = "basic">
+                    <div class = "typesdesc">BASIC</div>
+                </div>
+                <div class = "description">
+                    <h1>BASIC YOYO TYPES</h1>
+                    <br>
+                    Recommended for newbie.<br>
+                    Basic Yoyo use classic shape to help people do some basic tricks. It also use plastic for base material to reduce chance to get injury
+                </div>
+            </div><div class = "typeslevel right">
+                <div class = "container" onclick = "container(1)">
+                    <img src = "assets/homeprofessional.png">
+                    <div class = "typesdesc">PROFESSIONAL</div>
+                </div>
+                <div class = "description">
+                    <h1>PROFESSIONAL YOYO TYPES</h1>
+                    <br>
+                    Recommended for advanced player.<br>
+                    Basic Yoyo use classic shape to help people do some basic tricks. It also use plastic for base material to reduce chance to get injury
+                </div>
+            </div>
+        </div>
+        <div id = "footer">
+            <div class = "container">
+                <div id = "text">
+                    Follow Us
+                </div>
+                <div id = "logo">
+                    <div class = "icon"><img src="assets/socials/instagram-logo-white.png"></div>
+                    <div class = "icon"><img src="assets/socials/tumblr-logo-button-white.png"></div>
+                    <div class = "icon"><img src="assets/socials/twitter-logo-button-white.png"></div>
+                    <div class = "icon"><img src="assets/socials/facebook-logo-button-white.png"></div>
+                    <div class = "icon"><img src="assets/socials/google-plus-logo-button-white.png"></div>
+                </div>
+            </div><div class = "container">
+                <div id = "subscribe">
+                </div>
+                <div id = "copyright">
+                    Copyright &copy; JS Yoyo 2018
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../scripts/libs/jquery-latest.min.js"></script>
+    <script src="../scripts/navbar.js"></script>
 </html>
+
+<!-- EOF -->

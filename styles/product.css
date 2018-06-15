@@ -1,0 +1,129 @@
+
+body{
+    font-size: 20px;
+    font-weight: lighter;
+    color: #222;
+    text-align: center;
+}
+
+h1{
+    display: block;
+    padding-bottom: 10px;
+}
+
+div#products{
+    display: inline-block;
+    margin: 0px 0px 20px;
+    padding: 0px;
+    width: 92%;
+}
+
+div#products > div.product{
+    display: inline-block;
+    float: left;
+    margin: 0px;
+    padding: 10px;
+    width: 280px;
+    height: 230px;
+    text-align: center;
+}
+
+div.product > div.headerProduct{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: inherit;
+    height: inherit;
+}
+
+div.headerProduct > img{
+    width: 200px;
+    height: 200px;
+}
+
+div.product > div.detailProduct{
+    display: none;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: inherit;
+    height: inherit;
+    background-color: lightgrey;
+    border: 5px dotted black;
+}
+
+div.text{
+    display: initial;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 50%;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: inherit;
+    vertical-align: middle;
+    text-align: center;
+
+    transform: translateY(-50%);
+}
+
+div.text > img{
+    display: inline;
+    width: 100px;
+    height: 100px;
+}
+
+@media only screen and (min-width: 551px){
+    div.product:hover > div.headerProduct{
+        display: none;
+    }
+
+    div.product:hover > div.detailProduct{
+        display: inline-block;
+    }
+}
+
+/* for mobile phone */
+@media only screen and (max-width: 550px){
+    h1{
+        padding: 0px;
+    }
+
+    div#products{
+        width: 92%;
+    }
+
+    div#products > div.product{
+        padding: 25px 0px;
+        width: calc(100% - 10px);
+        height: auto;
+    }
+
+    div.product > div.headerProduct{
+        display: block;
+    }
+
+    nav.responsive{
+        display: none;
+    }
+
+    div.product > div.detailProduct{
+        display: block;
+        padding: 10px 0px;
+        width: 100%;
+    }
+
+    div.text{
+        display: initial;
+        position: initial;
+        transform: none;
+    }
+
+    div.text > img, div.text > br.imageResponsive{
+        display: none;
+    }
+
+}
+
+/* EOF */

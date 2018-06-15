@@ -1,10 +1,10 @@
 // scripts/product.js
 
-function loadPage(){
-	var viewportWidth = window.innerWidth;
-	if(viewportWidth > 650){
-		document.getElementById("products").style.width = Math.floor(viewportWidth/300) * 300 + "px";
-	}
-}
+$(document).ready( function(){
+    var viewportWidth = window.innerWidth;
+    if(viewportWidth > 650){
+        $("#products").css({ width: Math.floor(viewportWidth/300)*300 });
+    }
+} );
 
 // EOF

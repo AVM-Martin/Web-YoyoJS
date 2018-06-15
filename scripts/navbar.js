@@ -1,35 +1,32 @@
-var flag = -1;
-var flag2 = -1;
-function display(){
-    if(flag == -1) flag = 0;
-    var x = document.getElementsByClassName("menuContent");
-    if(document.getElementById("navbarBurger").style.display == "none") return ;
-    if(x[0].style.display == "none") {
-        for(var i = 0; i < x.length; i++) {
-            x[i].style.display = "block";
-        }
-        x ^= 1;
+// scripts/navbar.js
+
+function displayMenu(){
+    if($("#navbarBurger").css("display") == "none"){
+        return;
     }
-    else {
-        for(var i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
+    if($("#navbarMenu").css("display") == "none"){
+        $("#navbarMenu").css("display", "inline-block");
+    }
+    else{
+        $("#navbarMenu").css("display", "none");
+        $(".subContent").css("display", "none");
+        $("div.menuContent").css({ height: "initial" });
     }
 }
 
-function displaytypes(){
-    if(flag2 == -1) flag2 = 0;
-    var x = document.getElementsByClassName("subContent");
-    if(document.getElementById("navbarBurger").style.display == "none") return ;
-    if(x[0].style.display == "none") {
-        for(var i = 0; i < x.length; i++) {
-            x[i].style.display = "block";
-        }
-        x ^= 1;
+function displaySubMenu(){
+    if($("#navbarBurger").css("display") == "none"){
+        return;
     }
-    else {
-        for(var i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
+    if($(".subContent").css("display") == "none"){
+        var height = $("div.menuContent").height();
+        $(".subContent").css("display", "inline-block");
+        $("div.menuContent").css({ height: "auto" });
+    }
+    else{
+        $(".subContent").css("display", "none");
+        $("div.menuContent").css({ height: "initial" });
     }
 }
+
+// EOF

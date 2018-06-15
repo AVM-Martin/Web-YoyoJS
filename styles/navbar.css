@@ -1,148 +1,164 @@
-#navbarMenu{
+/* styles/navbar.css */
+
+#navbar{
     position: sticky;
-    width: 100vw;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
     height: 80px;
-    top: 0;
+    text-align: center;
     background-color: #122D3D;
-    z-index: 1;
-    color: #F4F4F4;
+    z-index: 10;
+}
+
+#navbar, #navbar a{
     font-size: 25px;
-}
-
-#navbarMenu > #navsmall > #navbarBurger{
-    display: none;
-}
-
-#navbarMenu > #navsmall > #logo{
-    width: 30%;
-    display: inline-block;
-    float: left;
-
-}
-
-#navbarMenu > #navsmall > #logo > img{
-    width: 40%;
-    height: auto;
-    transform: translateY(10%);
-}
-
-#navbarMenu > .menuContent{
-    display: inline-block;
-    width: 14%;
-    float: left;
-    padding-top: 20px;
-}
-
-#navbarMenu > .menuContent > .subContent {
-    position: absolute;
-    width: inherit;
-    display: none;
-    margin-top: 25px;
-    background-color: #122D3D;
-}
-
-#navbarMenu > .menuContent > .subContent > a{
-    float: none;
-    display: block;
-    text-decoration: none;
-    transform: translateY(30%);
-    height: 80px;
-}
-
-#navbarMenu > .menuContent > .subContent > a:visited{
     color: #F4F4F4;
+    text-decoration: none;
 }
 
-#navbarMenu > .menuContent > #dropDown:hover + .subContent{
+#navbar > #logo{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 10px;
+    width: calc(30% - 20px);
+    height: 60px;
+    background-image: url("../assets/logos/invertLogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#navbar > #navbarBurger{
+    display: none;
+    position: absolute;
+    margin: 5px 15px;
+    padding: 0px;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 40px;
+    background-image: url("../assets/menu-button-of-three-lines.png");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+}
+
+#navbar > #navbarMenu{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 20px 10px 0px;
+    width: calc(70% - 20px);
+    height: 60px;
+    background-color: inherit;
+}
+
+#navbar > #navbarMenu > .menuContent{
+    display: inline-block;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 20%;
+    height: inherit;
+    float: left;
+    color: #F4F4F4;
+    background-color: inherit;
+}
+
+#navbar > #navbarMenu > .menuContent > #dropDown{
+    height: inherit;
+}
+
+#navbar > #navbarMenu > .menuContent > .subContent {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: inherit;
+}
+
+#navbar > #navbarMenu > .menuContent > .subContent > a{
     display: block;
+    height: 80px;
+    line-height: 80px;
+}
+
+@media only screen and (min-width: 551px){
+    #navbar > #navbarMenu > .menuContent:hover > .subContent{
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 1024px){
-    #navbarMenu{
+    #navbar{
         height: 50px;
+    }
+
+    #navbar, #navbar a{
         font-size: 13px;
     }
-    #navbarMenu > #navsmall > #logo > img{
-        width: 45%;
-        height: auto;
+
+    #navbar > #logo{
+        height: 30px;
     }
-    #navbarMenu > .menuContent{
-        padding-top: 15px;
+
+    #navbar > #navbarMenu{
+        padding: 15px 10px 0px;
+        height: 35px;
     }
-    #navbarMenu > .menuContent > .subContent {
-        margin-top: 15px;
-    }
-    #navbarMenu > .menuContent > .subContent > a{
-        float: none;
-        display: block;
-        text-decoration: none;
-        transform: translateY(30%);
+
+    #navbar > #navbarMenu > .menuContent > .subContent > a{
         height: 50px;
+        line-height: 50px;
     }
 }
 
 
 @media only screen and (max-width: 550px){
-    #navbarMenu{
-        float: none;
-    }
-    #navbarMenu > #navsmall{
-        background-color: #122D3D;
-        height: inherit;
-        width: 100%;
-    }
-
-    #navbarMenu > #navsmall > #navbarBurger{
-        width: 15%;
-        height: inherit;
-        display: inline-block;
-        float: left;
-        margin-left: 5%;
-    }
-    #navbarMenu > #navsmall > #navbarBurger > img{
-        width: 60%;
-        height: inherit;
-        display: inline-block;
-        float: left;
-    }
-    #navbarMenu > #navsmall > #logo{
-        width: 60%;
-        display: inline-block;
-        height: inherit;
-        float: left;
-        background-color: #122D3D;
-        overflow: hidden;
-    }
-
-    #navbarMenu > #navsmall > #logo > img{
-        width: 40%;
+    #navbar{
+        min-height: 50px;
         height: auto;
-        transform: translateY(10%);
     }
 
-    #navbarMenu > .menuContent{
+    #navbar > #logo{
+        position: initial;
+        width: calc(100% - 20px);
+    }
+
+    #navbar > #navbarBurger{
+        display: inline-block;
+    }
+
+    #navbar > #navbarMenu{
         display: none;
+        position: initial;
+        padding: 0px;
         width: 100%;
-        float: left;
-        padding-top: 20px;
-        background-color: #122D3D;
-        font-size: 20px;
-        border-top-style: solid;
-        border-color: black;
+        height: initial;
     }
-    #navbarMenu > .menuContent > #dropDown{
-        position: relative;
-        display: block;
+
+    #navbar > #navbarMenu > .menuContent{
+        position: initial;
+        width: 100%;
+        height: initial;
+        float: initial;
+        line-height: 35px;
+        border-top: solid black;
     }
-    #navbarMenu > .menuContent > .subContent {
-        position: relative;
-        display: none;
+
+    #navbar > #navbarMenu > .menuContent > .subContent{
+        position: initial;
     }
-    #navbarMenu > .menuContent > .subContent > a{
-        border-top-style: solid;
-        border-color: black;
-    }
-    #navbarMenu > .menuContent > #dropDown:hover + .subContent{
-        display: block;
+
+    #navbar > #navbarMenu > .menuContent > .subContent > a{
+        height: initial;
+        line-height: 35px;
+        border-top: solid black;
     }
 }
+
+/* EOF */

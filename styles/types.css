@@ -1,47 +1,36 @@
+/* styles/types.css */
+
 #types{
     display: block;
     position: relative;
-    width: 90%;
-    height: 60vh;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 30px;
-    padding: 0;
+    width: 80%;
+    margin: 30px 10%;
+    padding: 0px;
 }
 
 #types > h1{
     display: block;
-    width: inherit;
     text-align: center;
-    margin: 0;
+    margin: 0px 0px 20px;
     font-size: 40px;
 }
 
 #types > .typeslevel{
-    width: 45%;
+    width: calc(50% - 4px);
     display: inline-block;
-    position: relative;
-    height: inherit;
-    margin: 0;
-    float: left;
+    margin: 0px;
     text-align: center;
 }
 
-#types > .typeslevel > .container {
+#types > .typeslevel > .container{
     width: auto;
     height: auto;
 }
 
-#types > .left {
-    width: 45%;
-    height: 70%;
+#types > .left{
     border-right-style: solid;
-    border-color: black; 
-}
-
-#types > .right {
-    width: 45%;
-    height: 50vh;
+    border-color: black;
+    border-width: 2px;
 }
 
 .red{
@@ -94,43 +83,30 @@
     #types > .typeslevel > .container > .typesdesc{
         font-size: 15px;
     }
-
-    #types > .left {
-        height: 50%;
-    }
 }
-
 
 @media only screen and (max-width: 550px){
     #types{
         margin-left: 5%;
         margin-right: 5%;
         margin-bottom: 30px;
-        width: 90vw;
-    }
-    #types > h1{
-        display: block;
-        width: inherit;
-        text-align: center;
-        margin-right: 0;
-        font-size: 40px;
+        width: 90%;
     }
 
-    #types > .left {
-        border-right-style: none;
+    #types > .left{
+        border: none;
+        margin-bottom: 20px;
     }
 
     #types > .typeslevel{
-        width: 100%;
         display: block;
-        height: auto;
-    }
-    #types > .typeslevel > .container > img{
-        width: 50%;
+        width: 100%;
     }
 
     #types > .typeslevel > .container > .typesdesc{
-        width: 80%;
+        width: 100%;
     }
 
 }
+
+/* EOF */

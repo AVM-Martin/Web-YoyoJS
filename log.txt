@@ -1,0 +1,6 @@
+[styles/footer.css] apa guna subscribe?
+[styles/footer.css] copyright ada transform
+
+[styles/types.css] apa guna .red dan .blue?
+
+[registration] selesaikan responsive

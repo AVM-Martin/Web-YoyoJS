@@ -1,0 +1,60 @@
+<!-- views/skeleton.html -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="../styles/base.css">
+        <link rel="stylesheet" type="text/css" href="../styles/navbar.css">
+        <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="navbar">
+            <a id = "logo" href="../index.html"></a>
+            <div id = "navbarBurger" onclick = "displayMenu()"></div>
+            <div id = "navbarMenu">
+                <a class="menuContent" href="../index.html">HOME</a>
+                <div class="menuContent">
+                    <div id = "dropDown" onclick = "displaySubMenu()">
+                        TYPES
+                    </div>
+                    <div class="subContent">
+                        <a href="basic.html">BASIC</a>
+                        <a href="professional.html">PROFESSIONAL</a>
+                    </div>
+                </div>
+                <a class="menuContent" href="tutorial.html">TUTORIALS</a>
+                <a class="menuContent" href="contact.html">CONTACTS</a>
+                <a class="menuContent" href="registration.html">REGISTRATION</a>
+            </div>
+        </div>
+        <div id = "content">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <div id = "footer">
+            <div class = "container">
+                <div id = "text">
+                    Follow Us
+                </div>
+                <div id = "logo">
+                    <div class = "icon"><img src="../assets/socials/instagram-logo-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/tumblr-logo-button-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/twitter-logo-button-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/facebook-logo-button-white.png"></div>
+                    <div class = "icon"><img src="../assets/socials/google-plus-logo-button-white.png"></div>
+                </div>
+            </div><div class = "container">
+                <div id = "subscribe">
+                </div>
+                <div id = "copyright">
+                    Copyright &copy; JS Yoyo 2018
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../scripts/libs/jquery-latest.min.js"></script>
+    <script src="../scripts/navbar.js"></script>
+</html>
+
+<!-- EOF -->
