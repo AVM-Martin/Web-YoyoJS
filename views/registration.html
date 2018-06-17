@@ -33,73 +33,73 @@
 
         <div id="content">
             <div id="signup">Sign Up</div>
-            <form method="post" id="registration" onsubmit="return validate()" action="#">
+            <form method="post" id="registration" onsubmit="return validate()" action="registration.html">
                 <div class="row">
                     <div id="header">
                         Registration
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col 1">
+                    <div class="col">
                         Name
                     </div>
-                    <div class="coll 1">
+                    <div class="coll">
                         <input type="text" name="name" placeholder="Your Name">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col 2">
+                    <div class="col">
                         Email
                     </div>
-                    <div class="coll 2">
+                    <div class="coll">
                         <input type="email" name="email" placeholder="test@example.com">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col 3">
+                    <div class="col">
                         Password
                     </div>
-                    <div class="coll 3">
+                    <div class="coll">
                         <input type="password" name="pass1" placeholder="Your Password">
                     </div>
-                    <div class="col 3">
-                        (8-20 characters length)
+                    <div class="col">
+                        (8-20 characters)
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col 4">
+                    <div class="col">
                         Repeat Password
                     </div>
-                    <div class="coll 4">
+                    <div class="coll">
                         <input type="password" name="pass2" placeholder="Repeat Your Password">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col 5">
+                    <div class="col verticalTop">
                         Address
                     </div>
-                    <div class="coll 5">
+                    <div class="coll">
                         <textarea placeholder="Your Address" id="address" name="address"></textarea>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col 6">
+                    <div class="col">
                         City
                     </div>
-                    <div class="coll 6">
+                    <div class="coll">
                         <select name="city">
-                            <option disabled selected>City</option>
-                            <option>Jakarta</option>
-                            <option>Bandung</option>
-                            <option>Tangerang</option>
+                            <option hidden selected value="">Select City</option>
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Bandung">Bandung</option>
+                            <option value="Tangerang">Tangerang</option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col 7">
+                    <div class="col">
                         Gender
                     </div>
-                    <div class="coll 7">
+                    <div class="coll">
                         <div class="gen">
                             <input type="radio" name="gender" placeholder="Male" id="male">Male
                         </div>
@@ -109,18 +109,20 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col 8"></div>
-                    <div id="error">
-                    </div>
+                    <div class="col"></div>
+                    <div class="coll" id="error"></div>
                 </div>
 
                 <div id="button">
-                    <input type="submit" name="Submit" id="submit" value="Submit">
-                    <input type="reset" name="Reset" id="reset" value="Reset">
+                    <input type="submit" name="submitButton" id="submitButton" value="Submit">
+                    <input type="reset" name="resetButton" id="resetButton" value="Reset">
                 </div>
             </form>
             <div id="background" onclick="exit()"></div>
-            <div id="dialog-box"></div>
+            <div id="dialog-box">
+                Registration Success!<br><br>
+                <button onclick="exit()">Close</button>
+            </div>
         </div>
 
         <div id = "footer">
@@ -136,8 +138,6 @@
                     <div class = "icon"><img src="../assets/socials/google-plus-logo-button-white.png"></div>
                 </div>
             </div><div class = "container">
-                <div id = "subscribe">
-                </div>
                 <div id = "copyright">
                     Copyright &copy; JS Yoyo 2018
                 </div>

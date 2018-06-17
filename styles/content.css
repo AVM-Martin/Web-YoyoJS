@@ -16,7 +16,7 @@
     padding: 40px 0px;
 }
 
-#content .odd{
+#content > .container:nth-child(odd){
     color: #ECECEA;
     background-color: #545253;
 }
