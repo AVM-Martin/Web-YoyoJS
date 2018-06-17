@@ -1,12 +1,5 @@
 /* styles/contact.css */
 
-/*div#history{ border: 1px solid blue; }*/
-/*div#contact{ border: 1px solid blue; }*/
-/*div#history > *:nth-child(odd){ border: 1px solid green; }*/
-/*div#history > *:nth-child(even){ border: 1px solid red; }*/
-/*div#contact > *:nth-child(odd){ border: 1px solid green; }*/
-/*div#contact > *:nth-child(even){ border: 1px solid red; }*/
-
 div#history, div#contact{
     position: relative;
     margin: 20px;
