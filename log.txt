@@ -2,3 +2,7 @@ DONE [styles/footer.css] apa guna subscribe?
 DONE [styles/footer.css] copyright ada transform
 DONE [styles/types.css] apa guna .red dan .blue?
 DONE [registration] selesaikan responsive
+[footer] masukin href ke dalam div#logo
+[contact] masukin founder picture
+[contact] masukin href ke dalam div#contact > div.description
+[contact] perbaiki tampilan bagian div#contact > div.description
