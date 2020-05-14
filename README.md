@@ -10,25 +10,25 @@ Human and Computer Interaction LAB Project
     <td align="center">
       <a href="https://AVM-Martin.my.id/">
         <img src="https://github.com/AVM-Martin.png" width="100px;" alt=""/><br />
-        <sub><b>AVM-Martin</b></sub>
+        <sub><b>Andreas Martin</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/ekeitaro/">
         <img src="https://github.com/ekeitaro.png" width="100px;" alt=""/><br />
-        <sub><b>ekeitaro</b></sub>
+        <sub><b>Edward Keitaro</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/mikechrist21/">
         <img src="https://github.com/mikechrist21.png" width="100px;" alt=""/><br />
-        <sub><b>MC</b></sub>
+        <sub><b>Mike Christ</b></sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/rapel02/">
         <img src="https://github.com/rapel02.png" width="100px;" alt=""/><br />
-        <sub><b>Rapel</b></sub>
+        <sub><b>Rafael Herman</b></sub>
       </a>
     </td>
   </tr>
